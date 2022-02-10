@@ -7,7 +7,7 @@ class App < Sinatra::Base
     get '/' do
 
 
-        erb :'../views/super_hero'
+        erb :super_hero
     end
 
     post '/teams' do
@@ -18,7 +18,7 @@ class App < Sinatra::Base
         @team_members = params["team"]["members"]
 
 
-        erb :'../views/team'\
+        erb :team
         
     end
 
